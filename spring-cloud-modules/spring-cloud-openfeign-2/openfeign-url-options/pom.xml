@@ -44,10 +44,7 @@
     </dependencies>
 
     <properties>
-        <!--        <spring-cloud.version>2021.0.5</spring-cloud.version>-->
         <spring-cloud.version>2022.0.1</spring-cloud.version>
-<!--        <maven.compiler.source>17</maven.compiler.source>-->
-<!--        <maven.compiler.target>17</maven.compiler.target>-->
     </properties>
 
 </project>
