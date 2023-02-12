@@ -1,11 +1,11 @@
-package com.baeldung.cloud.openfeign.controller;
+package com.baeldung.cloud.openfeign.configureOpenFeignUrl.controller;
 
-import com.baeldung.cloud.openfeign.clients.AlbumClient;
-import com.baeldung.cloud.openfeign.clients.PostClient;
-import com.baeldung.cloud.openfeign.clients.TodoClient;
-import com.baeldung.cloud.openfeign.dto.Album;
-import com.baeldung.cloud.openfeign.dto.Post;
-import com.baeldung.cloud.openfeign.dto.Todo;
+import com.baeldung.cloud.openfeign.configureOpenFeignUrl.clients.AlbumClient;
+import com.baeldung.cloud.openfeign.configureOpenFeignUrl.clients.PostClient;
+import com.baeldung.cloud.openfeign.configureOpenFeignUrl.clients.TodoClient;
+import com.baeldung.cloud.openfeign.configureOpenFeignUrl.dto.Album;
+import com.baeldung.cloud.openfeign.configureOpenFeignUrl.dto.Post;
+import com.baeldung.cloud.openfeign.configureOpenFeignUrl.dto.Todo;
 import feign.Feign;
 import feign.Target;
 import feign.codec.Decoder;

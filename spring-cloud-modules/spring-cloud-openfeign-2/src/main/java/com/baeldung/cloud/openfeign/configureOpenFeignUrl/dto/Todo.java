@@ -1,10 +1,10 @@
-package com.baeldung.cloud.openfeign.dto;
+package com.baeldung.cloud.openfeign.configureOpenFeignUrl.dto;
 
-public class Album {
-
+public class Todo {
     private Integer id;
     private Integer userId;
     private String title;
+    private Boolean completed;
 
     public Integer getId() {
         return id;
@@ -28,5 +28,13 @@ public class Album {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public Boolean getCompleted() {
+        return completed;
+    }
+
+    public void setCompleted(Boolean completed) {
+        this.completed = completed;
     }
 }

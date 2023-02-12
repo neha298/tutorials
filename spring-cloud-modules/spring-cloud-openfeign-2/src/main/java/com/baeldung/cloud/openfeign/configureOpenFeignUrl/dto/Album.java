@@ -1,11 +1,10 @@
-package com.baeldung.cloud.openfeign.dto;
+package com.baeldung.cloud.openfeign.configureOpenFeignUrl.dto;
 
-public class Post {
+public class Album {
 
     private Integer id;
     private Integer userId;
     private String title;
-    private String body;
 
     public Integer getId() {
         return id;
@@ -29,13 +28,5 @@ public class Post {
 
     public void setTitle(String title) {
         this.title = title;
-    }
-
-    public String getBody() {
-        return body;
-    }
-
-    public void setBody(String body) {
-        this.body = body;
     }
 }

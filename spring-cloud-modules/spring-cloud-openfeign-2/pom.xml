@@ -10,9 +10,9 @@
 
     <parent>
         <groupId>com.baeldung</groupId>
-        <artifactId>parent-boot-2</artifactId>
+        <artifactId>parent-boot-3</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../../parent-boot-2</relativePath>
+        <relativePath>../../parent-boot-3</relativePath>
     </parent>
 
     <dependencyManagement>
@@ -57,7 +57,7 @@
     </dependencies>
 
     <properties>
-        <spring-cloud.version>2021.0.3</spring-cloud.version>
+        <spring-cloud.version>2022.0.1</spring-cloud.version>
         <feign-form.version>3.8.0</feign-form.version>
     </properties>
 

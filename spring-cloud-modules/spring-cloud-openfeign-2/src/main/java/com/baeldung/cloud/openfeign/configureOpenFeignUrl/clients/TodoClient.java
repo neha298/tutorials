@@ -1,6 +1,6 @@
-package com.baeldung.cloud.openfeign.clients;
+package com.baeldung.cloud.openfeign.configureOpenFeignUrl.clients;
 
-import com.baeldung.cloud.openfeign.dto.Todo;
+import com.baeldung.cloud.openfeign.configureOpenFeignUrl.dto.Todo;
 import feign.RequestLine;
 import org.springframework.cloud.openfeign.FeignClient;
 

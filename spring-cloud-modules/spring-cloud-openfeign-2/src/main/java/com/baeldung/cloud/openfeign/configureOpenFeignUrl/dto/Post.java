@@ -1,10 +1,11 @@
-package com.baeldung.cloud.openfeign.dto;
+package com.baeldung.cloud.openfeign.configureOpenFeignUrl.dto;
 
-public class Todo {
+public class Post {
+
     private Integer id;
     private Integer userId;
     private String title;
-    private Boolean completed;
+    private String body;
 
     public Integer getId() {
         return id;
@@ -30,11 +31,11 @@ public class Todo {
         this.title = title;
     }
 
-    public Boolean getCompleted() {
-        return completed;
+    public String getBody() {
+        return body;
     }
 
-    public void setCompleted(Boolean completed) {
-        this.completed = completed;
+    public void setBody(String body) {
+        this.body = body;
     }
 }
