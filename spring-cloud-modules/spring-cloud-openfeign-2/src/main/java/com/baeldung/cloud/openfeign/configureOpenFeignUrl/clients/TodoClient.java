@@ -9,5 +9,5 @@ import java.net.URI;
 @FeignClient(name = "todoClient")
 public interface TodoClient {
     @RequestLine(value = "GET")
-    Todo getPlaceholderObjectById(URI uri);
+    Todo getTodoById(URI uri);
 }

@@ -46,8 +46,8 @@ public class FeignClientController {
     }
 
     @GetMapping(value = "todos/{id}")
-    public Todo getPlaceholderObjectById(@PathVariable(value = "id") Integer id) {
-        return todoClient.getPlaceholderObjectById(URI.create("https://jsonplaceholder.typicode.com/todos/" + id));
+    public Todo getTodoById(@PathVariable(value = "id") Integer id) {
+        return todoClient.getTodoById(URI.create("https://jsonplaceholder.typicode.com/todos/" + id));
     }
 
 }
