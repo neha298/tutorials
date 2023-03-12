@@ -28,7 +28,7 @@ import java.net.URI;
 
 @RestController
 @Import(FeignClientsConfiguration.class)
-public class FeignClientController {
+public class ConfigureFeignUrlController {
     private final AlbumClient albumClient;
     private final PostClient postClient;
 
@@ -37,11 +37,11 @@ public class FeignClientController {
 
     private final ObjectProvider<HttpMessageConverterCustomizer> customizers;
 
-    public FeignClientController(AlbumClient albumClient,
-                                 PostClient postClient,
-                                 Decoder decoder,
-                                 Encoder encoder,
-                                 ObjectFactory<HttpMessageConverters> messageConverters, ObjectProvider<HttpMessageConverterCustomizer> customizers) {
+    public ConfigureFeignUrlController(AlbumClient albumClient,
+                                       PostClient postClient,
+                                       Decoder decoder,
+                                       Encoder encoder,
+                                       ObjectFactory<HttpMessageConverters> messageConverters, ObjectProvider<HttpMessageConverterCustomizer> customizers) {
         this.albumClient = albumClient;
         this.postClient = postClient;
         this.messageConverters = messageConverters;
