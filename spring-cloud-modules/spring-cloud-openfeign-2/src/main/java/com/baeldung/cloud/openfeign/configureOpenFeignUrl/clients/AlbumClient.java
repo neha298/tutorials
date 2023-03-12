@@ -9,4 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface AlbumClient {
     @GetMapping(value = "/{id}")
     Album getAlbumById(@PathVariable(value = "id") Integer id);
+
+    @GetMapping(value = "/{id}")
+    Album getAlbumByIdAndDynamicUrl(@PathVariable(name = "id") Integer id);
 }
