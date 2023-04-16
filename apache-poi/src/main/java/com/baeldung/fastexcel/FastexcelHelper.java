@@ -37,24 +37,24 @@ public class FastexcelHelper {
         return data;
     }
 
-public void writeExcel() throws IOException {
-    File currDir = new File(".");
-    String path = currDir.getAbsolutePath();
-    String fileLocation = path.substring(0, path.length() - 1) + "fastexcel.xlsx";
+    public void writeExcel() throws IOException {
+        File currDir = new File(".");
+        String path = currDir.getAbsolutePath();
+        String fileLocation = path.substring(0, path.length() - 1) + "fastexcel.xlsx";
 
-    try (OutputStream os = Files.newOutputStream(Paths.get(fileLocation)); Workbook wb = new Workbook(os, "MyApplication", "1.0")) {
-        Worksheet ws = wb.newWorksheet("Sheet 1");
+        try (OutputStream os = Files.newOutputStream(Paths.get(fileLocation)); Workbook wb = new Workbook(os, "MyApplication", "1.0")) {
+            Worksheet ws = wb.newWorksheet("Sheet 1");
 
-        ws.width(0, 25);
-        ws.width(1, 15);
+            ws.width(0, 25);
+            ws.width(1, 15);
 
-        ws.range(0, 0, 0, 1).style().fontName("Arial").fontSize(16).bold().fillColor("3366FF").set();
-        ws.value(0, 0, "Name");
-        ws.value(0, 1, "Age");
+            ws.range(0, 0, 0, 1).style().fontName("Arial").fontSize(16).bold().fillColor("3366FF").set();
+            ws.value(0, 0, "Name");
+            ws.value(0, 1, "Age");
 
-        ws.range(1, 0, 1, 1).style().wrapText(true).set();
-        ws.value(2, 0, "John Smith");
-        ws.value(2, 1, 20L);
+            ws.range(1, 0, 1, 1).style().wrapText(true).set();
+            ws.value(2, 0, "John Smith");
+            ws.value(2, 1, 20L);
+        }
     }
-}
 }
